@@ -17,4 +17,4 @@ jobs:
       - name: Run petclinic
         run: nohup java -jar petclinic/target/petclinic-2.2.2.BUILD-SNAPSHOT.jar &
       - name: Run petclinic test
-        run: mvn -B --file peteclinic-selenium/pom.xml -Dbrowser=chrome -Dheadless=true test
+        run: mvn -B --file petclinic-selenium/pom.xml -Dbrowser=chrome -Dheadless=true test
