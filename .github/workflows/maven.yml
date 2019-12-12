@@ -13,7 +13,7 @@ jobs:
     with:
       java-version: 1.8
   - name: Build with maven
-    run mvn -V --file petclinic/pom.xml package
+    run: mvn -B --file petclinic/pom.xml package
   - name: Run petclinic
     run: nohup java -jar petclinic/target/petclinic-2.2.2.BUILD-SNAPSHOT.jar &
   - name: Run petclinic
